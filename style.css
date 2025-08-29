@@ -1,0 +1,181 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.hero {
+  background: linear-gradient(120deg, #0077cc, #3399ff);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 { font-size: 40px; }
+.hero p { font-size: 18px; margin-bottom: 20px; }
+.hero button {
+  background: #ff6600;
+  border: none;
+  padding: 15px 40px;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.hero button:hover { background: #e65c00; }
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+h2 { margin-bottom: 20px; }
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+}
+.card img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.preview img {
+  width: 200px;
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.pricing {
+  background: #eef5ff;
+  padding: 50px 20px;
+  text-align: center;
+}
+.price-card {
+    display: inline-block;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.price-card span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0077cc;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer a {
+  color: #ffcc00;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+/* Auth buttons */
+.authBtn {
+  background: white;
+  border: 2px solid #0077cc;
+  color: #0077cc;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.authBtn:hover {
+  background: #0077cc;
+  color: white;
+}
+
+/* Modal */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000; 
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center; 
+  align-items: center;
+}
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.modal-content button {
+  width: 100%;
+  background: #0077cc;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal-content button:hover {
+  background: #005fa3;
+}
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;   /* bigger arrow */
+  font-weight: bold;
+  cursor: pointer;
+  display: none; /* hidden by default */
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+#backToTop:hover {
+  background: #0056b3;
+  transform: scale(1.15);
+}
+
+/* Center the arrow inside */
+#backToTop span {
+  display: inline-block;
+  line-height: 50px;
+}
+
