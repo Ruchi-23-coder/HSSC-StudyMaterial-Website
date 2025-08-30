@@ -17,19 +17,29 @@ document.getElementById("payBtn").onclick = function(e){
   e.preventDefault();
 }
 
-// Open modal
-function openModal(id) {
-  document.getElementById(id).style.display = "flex";
-}
+// Example: Auto scroll to video when preview section loads
+document.addEventListener("DOMContentLoaded", () => {
+  const previewSection = document.querySelector("#preview");
+  previewSection.classList.add("loaded");
+});
 
-// Close modal
-function closeModal(id) {
-  document.getElementById(id).style.display = "none";
-}
+// For future interactive features (currently empty)
 
-// Close modal when clicking outside
-window.onclick = function(event) {
-  if (event.target.classList.contains("modal")) {
-    event.target.style.display = "none";
-  }
-}
+// Example: Show alert when user clicks email
+document.addEventListener("DOMContentLoaded", () => {
+  const emailItem = document.querySelector(".contact-item:nth-child(2)");
+  emailItem.addEventListener("click", () => {
+    alert("Email us at: info@hsscgroupd.com");
+  });
+});
+
+// Optional: Show message when someone clicks Instagram link
+document.addEventListener("DOMContentLoaded", () => {
+  const instaLink = document.querySelector(".footer a");
+  instaLink.addEventListener("click", () => {
+    alert("Redirecting to AUM Tech Solution Instagram page...");
+  });
+});
+
+
+
